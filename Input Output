@@ -1,0 +1,6 @@
+class Solution {
+public:
+    void printNumber(int n) {
+        System.out.println(n);
+    }
+};
