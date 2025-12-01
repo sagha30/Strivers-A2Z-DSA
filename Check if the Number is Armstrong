@@ -1,0 +1,21 @@
+#include <cmath>
+class Solution {
+public:
+    bool isArmstrong(int n) {
+        int original = n;
+        int count = 0;
+        int ans = 0;
+        int temp = n;
+        while(temp > 0) {
+            count++;
+            temp /= 10;
+        }
+        temp = n;
+        while(temp > 0) {
+            int digit = temp % 10;
+            ans += pow(digit, count);
+            temp /= 10;
+        }
+        return ans == original;
+    }
+};
