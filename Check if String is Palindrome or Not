@@ -1,0 +1,6 @@
+class Solution {   
+    public boolean palindromeCheck(String s) {
+        String reverse=new StringBuilder(s).reverse().toString();
+        return s.equals(reverse);
+    }
+}
